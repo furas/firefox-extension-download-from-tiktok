@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Download from TikTok",
+  "version": "0.0.23",
+  "author": "Bartłomiej 'furas' Burek",
+  "description": "Download from TikTok 0.0.23 (updated: 2024.10.13)(created: 2024.06.17)",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "downloads",
+    "notifications"
+  ],
+  "icons": {
+    "48": "default.svg",
+    "96": "default.svg"
+  },
+  "browser_action": {
+    "default_icon": "default.svg",
+    "default_title": "Download from TikTok"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "applications": {
+    "gecko": {
+      "id": "download-video-from-tiktok@furas.pl"
+    }
+  }
+}
